@@ -3,20 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import IncomeInputs from './Components/IncomeInputs';
-import CreditCardInputs from './Components/CreditCardInputs';
+import { BrowserRouter } from 'react-router-dom';
+import App from "./App";
 import Header from './Components/Header';
-import CalcButton from './Components/CalcButton';
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Header /><App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 
 
-
-ReactDOM.render( < Header / > , document.getElementById('header'));
-
-ReactDOM.render( < IncomeInputs / > , document.getElementById('income'));
-
-ReactDOM.render( < CreditCardInputs / > , document.getElementById('credit'));
-
-ReactDOM.render( < CalcButton / > , document.getElementById('button'));
 
 
 // If you want your app to work offline and load faster, you can change
