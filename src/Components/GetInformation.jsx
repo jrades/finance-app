@@ -25,4 +25,5 @@ class GetInformation extends Component {
 
 }
 
+
 export default GetInformation;
